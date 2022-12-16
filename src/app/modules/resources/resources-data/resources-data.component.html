@@ -1,0 +1,26 @@
+<div>
+  <div class="flex justify-between px-5 py-2">
+    <div>
+      <h4 class="count-data font-bold text-2xl">Gói cơ bản</h4>
+      <p class="text-gray-400">32G RAM 4CPU</p>
+    </div>
+    <button
+      class="flex items-center text-white border-0 rounded-[30px] px-5 py-2 bg-indigo-500"
+    >
+      <span class="text-sm mr-1">Mua them</span>
+      <mat-icon>trending_flat</mat-icon>
+    </button>
+  </div>
+  <div class="py-8">
+    <button class="flex items-center border gap-2 rounded-3xl py-2 px-4 border-indigo-500 ">
+      <span class="text-indigo-500">Làm mới</span>
+        <span class="flex items-center border-0 p-1 rounded-full bg-indigo-500">
+
+            <mat-icon class="text-white" >published_with_changes</mat-icon>
+        </span>
+    </button>
+  </div>
+  <div class="w-full items-center flex-wrap">
+    <app-char-resources *ngFor="let item of dataChart" [dataChart]="item"></app-char-resources>
+  </div>
+</div>
